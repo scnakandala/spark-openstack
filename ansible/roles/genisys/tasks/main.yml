@@ -29,5 +29,6 @@
       - keras
       - pandas
       - pillow
+      - h5py
     tags:
     - prepare

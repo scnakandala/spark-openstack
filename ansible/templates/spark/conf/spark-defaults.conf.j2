@@ -9,7 +9,7 @@ spark.executor.extraClassPath   {{hadoop_home}}/etc/hadoop/:{{spark_extra_jars_l
 spark.driver.extraClassPath {{spark_extra_jars_list}}{{ignite_cp|default("")}}
 {% endif %}
 
-spark.master    {{  "spark://%s:7077" % active_master_ip if not use_yarn else "yarn" }}
+spark.master    spark://spark-cluster-master:7077
 spark.eventLog.enabled true
 spark.eventLog.dir /tmp/spark-events
 spark.history.fs.logDirectory file:///tmp/spark-events
