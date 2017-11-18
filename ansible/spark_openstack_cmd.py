@@ -266,7 +266,7 @@ def make_extra_vars():
     extra_vars["ignite_version"] = args.ignite_version
 
     #FIXME
-    extra_vars["block_device_name"] = "vdb1"
+    extra_vars["block_device_name"] = "vda1"
 
     return extra_vars
 
