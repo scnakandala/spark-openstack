@@ -265,6 +265,9 @@ def make_extra_vars():
     extra_vars["deploy_genisys"] = args.deploy_genisys
     extra_vars["ignite_version"] = args.ignite_version
 
+    #FIXME
+    extra_vars["block_device_name"] = "vdb1"
+
     return extra_vars
 
 

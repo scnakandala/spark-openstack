@@ -13,4 +13,11 @@
 - copy: src=/etc/ganglia-webfrontend/apache.conf dest=/etc/apache2/sites-available/ganglia.conf remote_src=yes
 - command: a2ensite ganglia.conf
 
+- file: path=/etc/ganglia/conf.d state=directory mode=0755
+- file: path=/usr/lib/ganglia/python_modules state=directory mode=0755
+
 - template: src=gmetad.conf.j2 dest=/etc/ganglia/gmetad.conf
+- template: src=default.json.j2 dest=/var/lib/ganglia-web/conf/default.json
+- template: src=disk_throughput_report.json.j2 dest=/usr/share/ganglia-webfrontend/graph.d/disk_throughput_report.json
+- template: src=diskstat.py.j2 dest=/usr/lib/ganglia/python_modules/diskstat.py}
+- template: src=diskstat.conf.j2 dest=/etc/ganglia/conf.d/diskstat.conf}
