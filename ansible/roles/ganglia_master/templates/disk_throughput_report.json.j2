@@ -1,0 +1,10 @@
+{
+        "report_name" : "disk_throughput_report",
+        "report_type" : "standard",
+        "title" : "Disk throughput report",
+        "vertical_lable" : "Bytes/sec",
+        "series" : [
+                { "metric" : "diskstat_{{block_device_name}}_read_bytes_per_sec", "color" : "33cc33", "label" : "{{block_device_name}}_read", "line_width": "2", "type" : "stack"},
+                { "metric" : "diskstat_{{block_device_name}}_write_bytes_per_sec", "color" : "5555cc", "label" : "{{block_device_name}}_write", "line_width": "2", "type" : "stack"}
+        ]
+}

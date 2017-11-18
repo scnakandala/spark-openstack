@@ -19,5 +19,5 @@
 - template: src=gmetad.conf.j2 dest=/etc/ganglia/gmetad.conf
 - template: src=default.json.j2 dest=/var/lib/ganglia-web/conf/default.json
 - template: src=disk_throughput_report.json.j2 dest=/usr/share/ganglia-webfrontend/graph.d/disk_throughput_report.json
-- template: src=diskstat.py.j2 dest=/usr/lib/ganglia/python_modules/diskstat.py}
-- template: src=diskstat.conf.j2 dest=/etc/ganglia/conf.d/diskstat.conf}
+- template: src=diskstat.py.j2 dest=/usr/lib/ganglia/python_modules/diskstat.py
+- template: src=diskstat.conf.j2 dest=/etc/ganglia/conf.d/diskstat.conf
