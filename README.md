@@ -1,7 +1,7 @@
 ## Adopted from <a href="https://github.com/ispras/spark-openstack">https://github.com/ispras/spark-openstack</a> and modified to work on <a href="https://www.cloudlab.us/">CloudLab</a> OpenStack profile (verified on Ubuntu 16.04 image).
  
     $ ./spark-openstack -k <key-name> -i <key-file> -s 2 -t m1.xlarge -a <os-image-id> \
-    -n <network-id> -f <ext-net-id> --deploy-genisys (launch|destroy|master-ip) <cluster-name>
+    -n <network-id> -f <ext-net-id> (launch|destroy|master-ip) <cluster-name>
 
 link to the Ubuntu 16.04 image used: <a href="http://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64-disk1.img">http://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-amd64-disk1.img</a>    
 
