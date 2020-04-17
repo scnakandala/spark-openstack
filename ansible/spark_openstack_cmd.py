@@ -73,7 +73,7 @@ parser.add_argument("--spark-worker-mem-mb", type=int, help="force worker memory
 parser.add_argument("-j", "--deploy-jupyter", action='store_true', help="Should we deploy jupyter on master node.")
 parser.add_argument("-jh", "--deploy-jupyterhub", action='store_true',
                     help="Should we deploy jupyterHub on master node")
-parser.add_argument("--spark-version", default="2.2.0", help="Spark version to use")
+parser.add_argument("--spark-version", default="2.4.4", help="Spark version to use")
 parser.add_argument("--hadoop-version", default="2.7", help="Hadoop version to use")
 parser.add_argument("--boot-from-volume", default=False, help="Should the cluster be based on Cinder volumes. "
                                                               "Use it wisely")
